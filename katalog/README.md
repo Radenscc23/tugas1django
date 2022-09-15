@@ -20,7 +20,9 @@ loop for.
 pada masing-masing proyek. Untuk itu, apabila terdapat proyek-proyek
 baru yang akan dideploy, maka setiap proyek akan memiliki Virtual
 Environment yang berbeda dengan dependencies (package dan lainnya) yang 
-berbeda pula
+berbeda pula. Apabila dalam suatu projek web dibuat tanpa menggunakan 
+virtual environment, maka dependencies yang terdapat di dalamnya untuk
+menjalankan aplikasi web akan sulit dan tampilannya tidak sesuai ekspektasi
 
 3.Implementasi
 * Sesuai dengan step pada lab 1, saya mengimplementasikan deploy ke Heroku
