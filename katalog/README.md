@@ -1,5 +1,6 @@
 # Penjelasan terkait tugas 2 tentang MVT:
 
+***
 
 1.Kaitan dari views.py, urls.py, models.py, dan berkas html
 * Untuk melihat kaitan diantara keempat berkas kita dapat melihat bahwa
