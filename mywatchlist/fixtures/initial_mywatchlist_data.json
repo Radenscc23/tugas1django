@@ -1,0 +1,123 @@
+[
+    {
+        "model":"mywatchlist.filmwatchlist",
+        "pk":1,
+        "fields":{
+            "watchedmovies": true,
+            "titlemovie":"Peaky Blinders",
+            "ratingmovie": 5,
+            "moviereleasedate": "12 September 2013",
+            "reviewmovie": "BERR DINGINN"
+        }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":2,
+    "fields":{
+        "watchedmovies": false,
+        "titlemovie":"Goodfellas",
+        "ratingmovie": 4,
+        "moviereleasedate": "19 September 1990",
+        "reviewmovie": "KACAUUU KERENNN"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":3,
+    "fields":{
+        "watchedmovies": false,
+        "titlemovie":"Interstellar",
+        "ratingmovie": 5,
+        "moviereleasedate": "6 November 2014",
+        "reviewmovie": "hadeuhh mumet iki"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":4,
+    "fields":{
+        "watchedmovies": true,
+        "titlemovie":"Pengabdi Setan Communion",
+        "ratingmovie": 4,
+        "moviereleasedate": "4 Agustus 2022",
+        "reviewmovie": "saking takutnya sampe ganti ngompol"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":5,
+    "fields":{
+        "watchedmovies": false,
+        "titlemovie":"Memento",
+        "ratingmovie": 3,
+        "moviereleasedate": "16 Maret 2001",
+        "reviewmovie": "ADEUUUH MUMET AKU REK"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":6,
+    "fields":{
+        "watchedmovies": true,
+        "titlemovie":"The Godfather",
+        "ratingmovie": 5,
+        "moviereleasedate": "24 Maret 1972",
+        "reviewmovie": "Offer you cant refuse (dinginn banget)"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":7,
+    "fields":{
+        "watchedmovies": true,
+        "titlemovie":"The Godfather Part II",
+        "ratingmovie": 5,
+        "moviereleasedate": "20 Desember 1974",
+        "reviewmovie": "sungguh kejam kau, michael"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":8,
+    "fields":{
+        "watchedmovies": false,
+        "titlemovie":"The Godfather Part III",
+        "ratingmovie": 4,
+        "moviereleasedate": "15 Desember 1990",
+        "reviewmovie": "ADUHH TRAGIS COY"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":9,
+    "fields":{
+        "watchedmovies": false,
+        "titlemovie":"The Fault In Our Stars",
+        "ratingmovie": 5,
+        "moviereleasedate": "22 Agustus 2014",
+        "reviewmovie": "sedih cokkkks"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":10,
+    "fields":{
+        "watchedmovies": true,
+        "titlemovie":"MR.ROBOT",
+        "ratingmovie": 5,
+        "moviereleasedate": "24 Juni 2015",
+        "reviewmovie": "cocok untuk melawan bjorka"
+    }
+},
+{
+    "model":"mywatchlist.filmwatchlist",
+    "pk":11,
+    "fields":{
+        "watchedmovies": true,
+        "titlemovie":"365 Days",
+        "ratingmovie": 5,
+        "moviereleasedate": "19 Agustus 2022",
+        "reviewmovie": "cocok ditonton ketika....ah sudahlah"
+    }
+}
+]
