@@ -8,7 +8,7 @@
 * HTML = HTML merupakan sebuah bahasa standar pemrograman yang dibuat sebagai pengisi halaman depan pada sebuah website. Berbeda dengan XML ataupun JSON yang mana keduanya berhubungan dalam membawa maupun menyimpan sebuah data, HTML berfungsi sebagai penampil dari data tersebut. Umumnya, HTML sendiri akan berperan sebagai sebuah `bahasa desain` untuk menentukan letak-letak bagian *header*, *subheader*, *footer*, maupun bagian lainnya untuk mempercantik bagian dasar pada *website*.
 
 2.Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
-* Jawaban = *data delivery* merupakan sebuah langkah terpenting dalam sebuah pengembangan platform untuk mendistribusikan data dari satu `*stack* ke dalam *stack* lainnya`. Dengan adanya distribusi data ini, maka fungsionalitas platform (dalam *web* maupun *mobile*)akan lebih mudah digunakan oleh seorang user baik dari visualisasi maupun sisi teknis. 
+* Jawaban = *data delivery* merupakan sebuah langkah terpenting dalam sebuah pengembangan platform untuk mendistribusikan data dari satu *stack* ke dalam *stack* lainnya. Dengan adanya distribusi data ini, maka fungsionalitas platform (dalam *web* maupun *mobile*)akan lebih mudah digunakan oleh seorang user baik dari visualisasi maupun sisi teknis. 
 
 3.Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 * Langkah pertama yang saya lakukan yaitu membuat aplikasi mywatchlist di dalam *clone repository* dengan command python yaitu `python manage.py startapp mywatchlist`
@@ -37,27 +37,28 @@ class filmWatchlist(models.Model):
 
 * Agar dapat diimplementasi dalam bentuk XML, kita perlu menambah beberapa *lines of code* dalam views.py diantaranya
 
-'''
+```
 def show_in_xml(request):
     data = filmWatchlist.objects.all()
     return HttpResponse(serializers.serialize("xml", data), content_type="application/xml")
-'''
+```
+
 dengan menambahkan import 
 
-'''
+```
 from django.http import HttpResponse
 from django.core import serializers
-''' 
+```
 
 lalu dilanjutkan dengan baris kode `path('xml/', show_in_xml, name='show_in_xml'),` di dalam urls.py dalam folder mywatchlist
 
 * Agar dapat diimplementasi dalam bentuk JSON, kita perlu menambah beberapa *lines of code* dalam views.py diantaranya
 
-'''
+```
 def show_movie_in_json(request):
     data = filmWatchlist.objects.all()
     return HttpResponse(serializers.serialize("json", data), content_type="application/json")
-'''
+```
 
 dan dilanjutkan dalam urls.py dalam folder mywatchlist yaitu `path('json/', show_movie_in_json, name='show_movie_in_json'),`
 
