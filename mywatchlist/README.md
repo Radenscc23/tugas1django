@@ -65,8 +65,8 @@ dan dilanjutkan dalam urls.py dalam folder mywatchlist yaitu `path('json/', show
 
 ---
 ### Finally, My Links: 
-[HTML](https://radentugas2pbp.herokuapp.com/mywatchlist/html/)
-[XML](https://radentugas2pbp.herokuapp.com/mywatchlist/xml/)
-[JSON](https://radentugas2pbp.herokuapp.com/mywatchlist/json/)
+- [HTML](https://radentugas2pbp.herokuapp.com/mywatchlist/html/)
+- [XML](https://radentugas2pbp.herokuapp.com/mywatchlist/xml/)
+- [JSON](https://radentugas2pbp.herokuapp.com/mywatchlist/json/)
 
 
