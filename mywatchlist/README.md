@@ -74,3 +74,7 @@ dan dilanjutkan dalam urls.py dalam folder mywatchlist yaitu `path('json/', show
 ### Screenshots:
 
 ![html ss](https://user-images.githubusercontent.com/95229253/191538078-5c9cc640-9f8f-4373-854c-4bb0d14a83a0.jpg)
+
+![json ss](https://user-images.githubusercontent.com/95229253/191538233-11b34616-618f-41ac-96d8-91e600a003f2.jpg)
+
+![xml ss](https://user-images.githubusercontent.com/95229253/191538327-e6dc4ed7-4c9d-45f8-be38-d3b6dc570673.jpg)
