@@ -70,4 +70,7 @@ dan dilanjutkan dalam urls.py dalam folder mywatchlist yaitu `path('json/', show
 - [XML](https://radentugas2pbp.herokuapp.com/mywatchlist/xml/)
 - [JSON](https://radentugas2pbp.herokuapp.com/mywatchlist/json/)
 
+---
+### Screenshots:
 
+![html ss](https://user-images.githubusercontent.com/95229253/191538078-5c9cc640-9f8f-4373-854c-4bb0d14a83a0.jpg)
