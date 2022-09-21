@@ -33,7 +33,7 @@ class filmWatchlist(models.Model):
 
 * Setelah melakukan implementasi dasar, maka saya menghubungi *views* dan *template* dengan menambahkan beberapa fitur dalam views.py dan html
 
-* Lalu, *save semua file dan jalankan di localhost dengan command `python manage.py runserver` untuk melihat hasilnya.
+* Lalu, *save* semua file dan jalankan di localhost dengan command `python manage.py runserver` untuk melihat hasilnya.
 
 * Agar dapat diimplementasi dalam bentuk XML, kita perlu menambah beberapa *lines of code* dalam views.py diantaranya
 
