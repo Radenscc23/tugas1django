@@ -1,16 +1,16 @@
 ### Pertanyaan dan jawaban dalam README.md
 
-1.Jelaskan perbedaan antara JSON, XML, dan HTML!
+1. Jelaskan perbedaan antara JSON, XML, dan HTML!
 * JSON = Pada dasarnya JSON atau `JavaScript Object Notation` adalah sebuah format penyimpanan data dan bersifat indenpenden karena format ini dapat digunakan di berbagai bahasa pemrograman. Dikarenakan merupakan sebuah turunan dari bahasa pemrograman Javascript, format JSON otomatis terdesain sebagai sebuah format *self-describing* yang menyebabkan JSON menjadi lebih mudah untuk dimengerti. Pada umumnya, JSON akan menampilkan data yang tersimpan pada sebuah program dalam bentuk *text*.
 
 * XML = XML atau `eXtensible Markup Language` adalah format kedua untuk membawa dan bukan menyimpan suatu data dalam program baik aplikasi *mobile* maupun *web*. Tujuan utama pada XML berfokus pada kesederhanaan, *usability*, dan juga *generality* kepada seluruh *programmer* yang ingin mengaplikasikan XML dalam membawa data. Berbeda dengan JSON, XML bersifat *self-descriptive* yang artinya kita sebagai *user* dapat mengerti mengenai data apa yang disampaikan. 
 
 * HTML = HTML merupakan sebuah bahasa standar pemrograman yang dibuat sebagai pengisi halaman depan pada sebuah website. Berbeda dengan XML ataupun JSON yang mana keduanya berhubungan dalam membawa maupun menyimpan sebuah data, HTML berfungsi sebagai penampil dari data tersebut. Umumnya, HTML sendiri akan berperan sebagai sebuah `bahasa desain` untuk menentukan letak-letak bagian *header*, *subheader*, *footer*, maupun bagian lainnya untuk mempercantik bagian dasar pada *website*.
 
-2.Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
+2. Jelaskan mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
 * Jawaban = *data delivery* merupakan sebuah langkah terpenting dalam sebuah pengembangan platform untuk mendistribusikan data dari satu *stack* ke dalam *stack* lainnya. Dengan adanya distribusi data ini, maka fungsionalitas platform (dalam *web* maupun *mobile*)akan lebih mudah digunakan oleh seorang user baik dari visualisasi maupun sisi teknis. 
 
-3.Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+3. Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 * Langkah pertama yang saya lakukan yaitu membuat aplikasi mywatchlist di dalam *clone repository* dengan command python yaitu `python manage.py startapp mywatchlist`
 
 * Langkah kedua dimulai setelah saya membuat aplikasi. Saya beranjak ke dalam models.py dengan menambah potongan kode berikut: 
