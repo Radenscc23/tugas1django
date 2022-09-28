@@ -34,7 +34,7 @@ def new_todo(request: HttpRequest):
         )
         return HttpResponseRedirect(reverse("todolist:show_todolist"))
     return render (request, "todolist_create.html")
-    
+
 def register(request):
     form = UserCreationForm()
     if request.method == "POST":
@@ -42,7 +42,7 @@ def register(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Akun telah berhasil dibuat!')
-            return redirect('todolist:login')
+            return redirect('todolist:login_user')
     
     context = {'form':form}
     return render(request, 'register.html', context)
