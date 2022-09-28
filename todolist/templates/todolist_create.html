@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Tambah Todo</title>
+{% endblock meta %}
+
+{% block content %}
+<div class = "login">
+
+    <h1>Tambah Todo</h1>  
+
+        <form method="POST" >  
+            {% csrf_token %}  
+            <table>  
+                <tr>
+                <td>Title:</td>
+                <td><input type= "text" name= "title" placeholder="Title"></td> 
+                </tr>
+                <tr>
+                    <td>Description:</td>
+                    <td><input type= "text" name= "description" placeholder="Description"></td> 
+                    </tr>
+                <tr>  
+                    <td></td>
+                    <td><input type="submit" name="submit" value="Buat" href="{%url 'todolist:show_todolist' %}"/></td>  
+                </tr>  
+            </table>  
+        </form>
+    {% if messages %}  
+        <ul >   
+            {% for message in messages %}  
+                <li>{{ message }}</li>  
+                {% endfor %}  
+        </ul>   
+    {% endif %}
+
+</div>
+
+{% endblock content %}
