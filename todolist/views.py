@@ -17,7 +17,7 @@ class CreateNewForm(forms.Form):
     title = forms.CharField(label="Judul")
     description = forms.CharField(label="Deskripsi", widget=forms.Textarea)
 
-@login_required(login_url="/todolist/login/'")
+@login_required(login_url='/todolist/login/')
 def show_todolist(request: HttpRequest):
     todolist = Task.objects.all().filter(user = request.user)
     context = {"todolist":todolist}
@@ -63,7 +63,23 @@ def logout_user(request: HttpRequest):
     logout(request)
     return redirect('todolist:login_user')
 
+@login_required(login_url='/todolist/login/')
+def perubahan_status(request, id):
+    getstatus = Task.objects.get(pk = id)
+    if getstatus.is_finished:
+        getstatus.is_finished = False
+    else:
+        getstatus.is_finised = True
+    getstatus.save()
+    return HttpResponseRedirect(reverse('todolist:show_todolist'))
 
-            
+@login_required(login_url='/todolist/login/')
+def delete_list(request,id):
+    deletelist = Task.objects.get(pk = id)
+    deletelist.delete()
+    return HttpResponseRedirect(reverse('todolist:show_todolist'))
+
+
+
     
     

@@ -8,3 +8,4 @@ class Task (models.Model):
     date = models.DateField(default = timezone.now)
     title = models.TextField(max_length = 250)
     description = models.TextField(null=True)
+    is_finished = models.BooleanField(default=False)

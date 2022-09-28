@@ -20,6 +20,15 @@
           <th>{{todo.date}}</th>
           <th>{{todo.title}}</th>
           <th>{{todo.description}}</th>
+          {% if getstatus.isfinished %}
+            <th> Selesai </th>
+          {% else %}
+            <th> Belum Selesai </th>
+          {% endif %}
+
+          <th><button><a href = "{%url 'todolist:perubahan_status' todo.id %}">Cek Status</a></button></th>
+          <th><button><a href = "{%url 'todolist:delete_list' todo.id %}">Delete</a></button></th>
+
       </tr>
     {% endfor %}
   </table>
