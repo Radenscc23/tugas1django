@@ -7,7 +7,7 @@
 {% block content %}
 
 <p>Selamat datang {{user.get_username}} | <a href= "{% url 'todolist:logout_user' %}">Log out</a></p>
-<button href = "{% url 'todolist:new_todo' %}"> Tambah List</button>
+<a href = "{% url 'todolist:new_todo' %}"> Tambah List</a>
 
 <table border = "4">
     <tr>
