@@ -73,8 +73,8 @@ dan dilanjutkan dalam urls.py dalam folder mywatchlist yaitu `path('json/', show
 ---
 ### Screenshots:
 
-![html ss](https://user-images.githubusercontent.com/95229253/191538078-5c9cc640-9f8f-4373-854c-4bb0d14a83a0.jpg)
+![ss html](https://user-images.githubusercontent.com/95229253/191645741-0cc668de-9890-4e50-8000-412e8433b72a.jpg)
 
-![json ss](https://user-images.githubusercontent.com/95229253/191538233-11b34616-618f-41ac-96d8-91e600a003f2.jpg)
+![ss json](https://user-images.githubusercontent.com/95229253/191645755-22b8aeab-394d-4b3a-a167-fcdd4767b26b.jpg)
 
-![xml ss](https://user-images.githubusercontent.com/95229253/191538327-e6dc4ed7-4c9d-45f8-be38-d3b6dc570673.jpg)
+![ss xml](https://user-images.githubusercontent.com/95229253/191645783-30a4735e-99ea-499a-a66e-653c4aaebc94.jpg)
