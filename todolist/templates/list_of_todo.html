@@ -5,32 +5,36 @@
 {% endblock meta %}
 
 {% block content %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-<p>Selamat datang {{user.get_username}} | <a href= "{% url 'todolist:logout_user' %}">Log out</a></p>
-<a href = "{% url 'todolist:new_todo' %}"> Tambah List</a>
 
-<table border = "4">
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Description</th>
-    </tr>
+<h2 class = "text-4xl font-bold text-center">Selamat datang {{user.get_username}} | <a href= "{% url 'todolist:logout_user' %}">Log out</a></h2>
+<h2 class = "text-4xl font-bold text-center"><a href = "{% url 'todolist:new_todo' %}"> Tambah List</a></h2>
+
+  <div class ="card-group">
     {% for todo in todolist %}
-      <tr>
-          <th>{{todo.date}}</th>
-          <th>{{todo.title}}</th>
-          <th>{{todo.description}}</th>
-          {% if getstatus.isfinished %}
-            <th> Selesai </th>
-          {% else %}
-            <th> Belum Selesai </th>
-          {% endif %}
-
-          <th><button><a href = "{%url 'todolist:perubahan_status' todo.id %}">Cek Status</a></button></th>
-          <th><button><a href = "{%url 'todolist:delete_list' todo.id %}">Delete</a></button></th>
-
-      </tr>
+      <div class="card border-primary mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <div class="card-action"></div>
+          <h1 class = "card-title">{{todo.title}}</h1>
+          <p class = "card-text">{{todo.description}}</p>
+          <p class = "card-text">{{todo.date}}</p>
+          <p>{{todo.is_finished|yesno:"Selesai,Belum Selesai"}}</p>
+          
+          <form action = "{%url 'todolist:perubahan_status' todo.id %}" method = "POST">
+            {% csrf_token %}
+            <button class = "btn btn-light">Cek Status</button>
+          </form>
+         
+          <form action = "{%url 'todolist:delete_list' todo.id %}" method = "POST">
+            {% csrf_token %}
+          <button class="btn btn-light">Delete</button>
+        </form>
+        </div>
+      </div>
+     
     {% endfor %}
-  </table>
+  </div> 
+
 
  {% endblock content %}

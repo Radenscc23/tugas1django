@@ -69,7 +69,7 @@ def perubahan_status(request, id):
     if getstatus.is_finished:
         getstatus.is_finished = False
     else:
-        getstatus.is_finised = True
+        getstatus.is_finished = True
     getstatus.save()
     return HttpResponseRedirect(reverse('todolist:show_todolist'))
 
