@@ -10,7 +10,9 @@ from django.http import HttpRequest
 from todolist.models import Task
 from django.contrib.auth.decorators import login_required
 from django import forms
-
+from django.core import serializers
+from django.http import HttpRequest, HttpResponse
+import datetime
 # Create your views here.
 class CreateNewForm(forms.Form):
     date = forms.DateField(label="Tanggal")
@@ -79,7 +81,26 @@ def delete_list(request,id):
     deletelist.delete()
     return HttpResponseRedirect(reverse('todolist:show_todolist'))
 
+@login_required(login_url="/todolist/login/")
+def show_in_json(request):
+    todo = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize("json", todo), content_type = "appplication/json")
 
+def add_json(request):
+    if request.method == "POST":
+        x = request.POST.get('title')
+        y = request.POST.get('description')
+        add = Task.objects.create(user=request.user, date = str(datetime.datetime.now().date()), title= x, description = y)
+        add.save()
+    return HttpResponse('')
+
+def delete_json(request,id):
+    user = user.request
+    todos = Task.objects.get(pk=id)
+    if user.id == todos.user_id and request.method == 'DELETE':
+        todos.delete()
+
+    return HttpResponse('')
 
     
     
